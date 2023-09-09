@@ -4,14 +4,14 @@ import { CONFIG } from "@libs/config";
 import moment from "moment";
 import { onError } from 'apollo-link-error'
 
-export const apollo = new ApolloClient({
+/*export const apollo = new ApolloClient({
 	uri: "https://api.github.com/graphql",
 	cache: new InMemoryCache(),
 	headers: {
 		"GraphQL-Features": "discussions_api",
 		Authorization: `Bearer ${process.env.GITHUB_API_KEY}`,
 	},
-});
+});*/
 
 export interface IAuthor {
 	login: string;
