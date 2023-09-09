@@ -2,6 +2,7 @@
 import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 import { CONFIG } from "@libs/config";
 import moment from "moment";
+import { onError } from 'apollo-link-error'
 
 export const apollo = new ApolloClient({
 	uri: "https://api.github.com/graphql",
